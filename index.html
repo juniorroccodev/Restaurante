@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,84 @@
     <!--boxIcons-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!--css custom-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!--js-->
-    <script src="assets/js/min.js"></script>
+    <!--TOPO - Cabeçalho Inicial do Site-->
+    <header>
+        <nav> 
+            <div class="container">
+             <a href="index.html" class="logo">
+                 <h1>I<span>talianíssima</span></h1>
+             </a>   
+
+             <div class="menu">
+                 <ul>
+                     <li>
+                         <a href="sobre.html">SOBRE</a>
+                     </li>
+                 </ul>
+             </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch">
+                    <input type="search" placeholder="O QUE DESEJA COMER HOJE?" name="inputSearch" id="inputSearch">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <!--Cárdapio-->
+    <main>
+        <div class="container">
+            <h1>Cárdapio</h1>
+            <p>Menu da semana</p>
+
+            <section class="pratos">
+
+                <article class="prato">
+                    <img src="imagens/pizza01.jpg" alt="Prato 01">
+                    <h4>Pizza Italianissima</h4>
+                    <h2>R$ 10.00</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam eaque placeat amet qui explicabo minus alias expedita voluptas corporis?</p>
+                    <button type="button">Quero esse</button>
+                </article>
+
+                <article class="prato">
+                    <img src="imagens/pizza02.jpg" alt="Prato 02">
+                    <h4>Pizza Italianissima</h4>
+                    <h2>R$ 10.00</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem sequi rerum iste repellendus iure quaerat vel neque nemo necessitatibus!</p>
+                    <button type="button">Quero esse</button>
+                </article>
+
+                <article class="prato">
+                    <img src="imagens/pizza03.jpg" alt="Prato 03">
+                    <h4>Pizza Italianissima</h4>
+                    <h2>R$ 10.00</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, doloremque! Sit aut libero voluptates omnis ut perferendis vel amet illum.</p>
+                    <button type="button">Quero esse</button>
+                </article>
+
+                <article class="prato">
+                    <img src="imagens/pizza04.jpg" alt="Prato 04">
+                    <h4>Pizza Italianissima</h4>
+                    <h2>R$ 10.00</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, neque nemo optio voluptatibus vero temporibus eum officia doloribus inventore explicabo?</p>
+                    <button type="button">Quero esse</button>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Júnior Rocco -<span>Por Amor</span></p>
+        </div>
+    </footer>
 </body>
 </html>

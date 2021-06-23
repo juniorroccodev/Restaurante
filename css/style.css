@@ -1,0 +1,222 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2? family = Cormorant + Garamond: wght @ 300 & display = swap');
+
+@import url('https://fonts.googleapis.com/css2? family = Abrir + Sans + Condensado: wght @ 300 & display = swap');
+
+    /*BASE*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .html, body{
+        scroll-behavior: smooth;        
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1rem;
+        background-color: #f5f5f5;
+        color: #000;
+        line-height: 1.6;
+    }
+
+    header nav{
+        background-color: rgb(37, 37, 37);
+        padding: 10px 0;
+    }
+
+    header nav .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav .logo{
+        color:  crimson;
+        text-decoration: none;
+    }
+
+    header nav .logo span{
+        font-family: 'Cormorant Garamond', serif;
+        color: #ffff;
+    }
+
+    header nav .menu ul li a{
+        color: #ffff;
+        text-decoration: none;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.2rem;
+    }
+
+    header .hero{
+        background-image: url('../imagens/fotomenu.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .hero form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .hero form input{
+        width: 70vw;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .3);
+        text-align: center;
+    }
+
+    main{
+        margin-top: 5rem;
+    }
+
+    main .container h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    main .container p{
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 40px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    main .container .pratos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prato{
+        background-color: #ffff;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: 1s ease;
+    }
+
+    .prato:hover{
+        background-color: #e2e0e0;
+    }
+
+    .prato img {
+        border-radius: 5px 5px 0px 0px;
+        margin-bottom: 10px;
+    }
+
+    .prato h4 {
+        padding: 0px 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: crimson;
+    }
+
+    .prato h2 {
+        margin-top: -1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }  
+    
+    .prato p{
+        padding: 0px 20px;
+        font-size: 1rem;
+    }
+
+    
+    .prato button{
+        width: 50%;
+        margin: 20px auto;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .3);
+        text-transform: uppercase;
+        background-color: crimson;
+        color: #ffff;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: 1s ease;
+    }
+
+    .prato button:hover{
+        background-color: #ffff;
+        color: crimson;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+    footer .container p{
+        text-align: center;
+        color: rgb(70, 66, 66);
+        font-family: 'Cormorant Garamond', serif;
+    }
+
+
+    /*SOBRE*/
+    .hero-sobre{
+        height: 300px;
+        background-color: rgb(41, 40, 40);
+        color: #ffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-sobre h2{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem;
+        color: crimson;
+    }
+
+
+    .hero-sobre span{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3rem;
+        color: rgb(104, 101, 101);
+    }
+
+    .hero-sobre .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /*MEDIA*/
+    @media (min-width: 600px) {
+        main .container .pratos{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        main .container .pratos .prato{
+            width: 300px;
+        }
+    }
+
+
+    /*--- container ---*/
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+
+
+    
